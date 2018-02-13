@@ -1,0 +1,40 @@
+5 - Recuperar a relao de todos os clubes e suas respectivas federaes. Projetando atravs de apelidos os atributos: Cdigo do Clube, Nome do Clube, Ano da Fundao e Federao das federaes RJ e SP cujo nome do clube termine com a letra O.
+	
+
+6- Recuperar a quantidade de times que pagam salrio maior que R$ 100.000,00. 
+
+
+
+7- Insira em um dos times da Federao Carioca o jogador Eduardo, com data de nascimento em 09 de maro de 2007, sexo masculino (M), cidade de nascimento salvador e salrio R$ 300.000,00.
+
+
+
+8 - Listar o cdigo, nome, salrio e nome do clube dos jogadores que ganham menos que Eduardo. Ordenando pelo nome do time.
+
+
+9 - Listar o codigo o nome e o salrio dos jogadores de melhor remunerao.
+
+
+
+10 - Listar codigo o clube o nome do clube o nome do jogador que ganha o menor salrio de cada time. Projetar ordenando por salrio.
+
+
+
+
+11- Delete o jogador do Time 1 que ganha o menor salrio.
+
+
+
+
+12- Conceda um aumento salarial de 30% ao jogador Eduardo.
+
+
+
+
+13 - Conceda um aumento de 10% aos jogadores que recebem salrio inferior a 10.000 no clube 2.	
+ 
+14 - Conceda um aumento de 15% a todos os jogadores que ganham a maior mdia salarial.
+
+
+
+15- Listar o cdigo do clube, o nome do clube, a quantidade de jogadores, mdia salarial, menor salrio, maior salrio de todos os clubes. Ordenados alfabeticamente por nome.

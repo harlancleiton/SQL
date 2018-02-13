@@ -1,0 +1,39 @@
+
+
+
+2) recuperar a quantidade de chamados abertos em cada departamento por filial e cliente.
+
+
+select count(c.cod_chamado),
+	   d.nome,
+	   d.cod_filial,
+	   d.cod_cliente,
+	   c.descricao
+	   from chamados as c,
+		    departamento as d,
+		    cliente as c,
+		    usuario as u
+		    where c.cod_cliente = d.cod_cliente
+		    and   d.cod_dpto = u.cod_dpto
+		    and   u.chave = c.chave
+		    group by d.nome,
+					 d.cod_filial
+					 d.cod_cliente,
+			  	     c.descricao
+			  	     
+
+3) quais os tcnicos que possuem menos chamados que o tcnico matricula 1234.
+
+
+		
+		select t1.nome,
+			   COUNT(ec1.matricula) as 'QTD Chamados'
+			   from tecnicos as t1
+			        etapa_chamado as ec1
+			        where ec1.matricula = t.matricula
+			        and COUNT(ec1.matricula) <	(select COUNT(ec.matricula)
+													from etapa_chamado as ec
+												where ec.matricula = 1234
+													and status='Aberto' )
+			order by COUNT(ec1.matricula)
+				

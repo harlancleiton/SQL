@@ -1,0 +1,20 @@
+
+/* 4  Recuperar a relao de todos os clubes e suas 
+respectivas federaes. 
+Projetando atravs de apelidos os 
+atributos: Cdigo do Clube, Nome do Clube, Ano da Fundao e Federao.
+
+*/
+
+select  -- Quais dados sero projetados ?
+		c.cod_clube as 'Cdigo do Clube',
+		c.nome as 'Nome do Clube',
+		datepart(YEAR, c.data_fundacao) as 'Ano da Fundao',
+		f.descricao as 'Federao'
+		
+		from -- Qual a origem dos dados ?
+			 Clube as c,
+			 Federacao as f
+			 where -- Qual o critrio ?
+					f.cod_fed = c.cod_fed
+			
